@@ -19,3 +19,19 @@ console.log(add(5, 3));
 console.log(subtract(5, 3));
 console.log(multiply(5, 3));
 console.log(divide(5, 3));
+
+function operate(operator, num1, num2) {
+  if (operator === "+") {
+    return add(num1, num2);
+  } else if (operator == "-") {
+    return subtract(num1, num2);
+  } else if (operator == "*") {
+    return multiply(num1, num2);
+  } else if (operator == "/") {
+    return divide(num1, num2);
+  } else {
+    return console.log("Invalid operation");
+  }
+}
+
+console.log(operate("/", 10, 2));
